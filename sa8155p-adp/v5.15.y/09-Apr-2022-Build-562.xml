@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://bitbucket.org" name="bitbucket"/>
+  <remote fetch="https://github.com" name="github"/>
+  <remote fetch="http://git.linaro.org" name="linaro"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="http://git.shr-project.org" name="shr"/>
+  <remote fetch="http://git.yoctoproject.org" name="yocto"/>
+  
+  <default revision="dunfell" sync-j="4"/>
+  
+  <project dest-branch="dunfell" name="96boards/meta-96boards" path="layers/meta-96boards" remote="github" revision="762e5e76ad1a5f385f845b09bde723edfcd09cba" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="96boards/meta-rpb" path="layers/meta-rpb" remote="github" revision="383ace2f028fda49656882b3381ee60354ab6ae9" upstream="dunfell"/>
+  <project dest-branch="qcom/dunfell" name="96boards/oe-rpb-manifest" path="conf" remote="github" revision="520bb5a0e89b0eecf330fed3beb92d9eb1080a4a" upstream="qcom/dunfell">
+    <linkfile dest="setup-environment" src="setup-environment-internal"/>
+  </project>
+  <project dest-branch="master" name="OSSystems/meta-browser" path="layers/meta-browser" remote="github" revision="061358de8e9aa050487b86123c577a9ab65878c4" upstream="master"/>
+  <project dest-branch="dunfell" name="git/meta-arm" path="layers/meta-arm" remote="yocto" revision="d21ded082c27959c8d617fd18da60b236d2ec62b" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="git/meta-selinux" path="layers/meta-selinux" remote="yocto" revision="1fba53261bb8d7d3a5dcf238e388811cbb15219b" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="git/meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="f6b88c1d2f515ffac90457c0d649d6c805fff736" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="kraj/meta-clang" path="layers/meta-clang" remote="github" revision="3bb001d3f364bbf6588fed04b9ee2c7e74a0beba" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="meta-python2" path="layers/meta-python2" remote="oe" revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="meta-qt5/meta-qt5" path="layers/meta-qt5" remote="github" revision="6bfe29d9e8fdd5c2fd17c736814b6df859b3af50" upstream="dunfell"/>
+  <project dest-branch="master" name="meta-rust/meta-rust" path="layers/meta-rust" remote="github" revision="c654f5cb928bd4f4c7da7d74a8356fd2a94283f6" upstream="master"/>
+  <project dest-branch="dunfell" name="ndechesne/meta-qcom" path="layers/meta-qcom" remote="github" revision="6d06c9ea9a9488ad2ea0a566ed012039ec557cbc" upstream="dunfell"/>
+  <project dest-branch="1.46" name="openembedded/bitbake" path="bitbake" remote="github" revision="d8c2175f6a7b5fdf111d6a073b2c3dbd3c0b061d" upstream="1.46"/>
+  <project dest-branch="dunfell" name="openembedded/meta-backports" path="layers/meta-backports" remote="linaro" revision="1974f4d0a87fc6fd99c8a05ea95fdcd6634a5ee2" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="10af9133aeb28b3487fd227c900c11b786505699" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="86b864a4d8c28185a4a464583fb86f73aa22847a" upstream="dunfell"/>
+  <project dest-branch="dunfell" name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="aa762b7ca2417b80dd114a4ab263d69074912f82" upstream="dunfell"/>
+</manifest>
